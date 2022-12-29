@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: Sofia;
+    src: url('../fonts/Sofia_Regular.otf');
+}
+
+@font-face {
+    font-family: Bellota;
+    src: url("../fonts/Bellota-Bold.otf");
+}
+
+@font-face {
+    font-family: Abril;
+    src: url("../fonts/AbrilFatface-Regular.otf");
+}
+
+@font-face {
+    font-family: Walkway;
+    src: url(../fonts/Walkway_SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins.otf);
+}
+
+.hero{
+    
+    background-size: cover;
+    display: flex;
+    flex-flow: row;
+    background: url("../images/images1/web-1012467_1920.jpg");
+    justify-content: space-around;
+    align-items: center;
+    animation-timing-function: ease-in;
+}
+
+.hero-image{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icons{
+    border-radius: 50%;
+    width: 500px;
+    background: blueviolet;
+}
+
+.hero-image a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 25px;
+    width: max-content;
+    position: absolute;
+    color: white;
+    font-family: Bellota;
+}
+
+.hero-image a {
+    padding: 20px 20px;
+    background: rgba(218, 172, 24, 0.945);
+    transition: .3s ease-in-out;
+}
+
+.hero-image a i {
+    color: black;
+    font-size: 17px;
+}
+
+.hero-image a:hover{
+    box-shadow: 5px 5px black;
+}
+
+.hero-image a:nth-of-type(1){
+    margin-right: 53%;
+}
+
+.hero-image a:nth-of-type(2){
+    margin-right: -20%;
+    margin-top: -30%;
+}
+
+.hero-image a:nth-of-type(3){
+    margin-right: -25%;
+    margin-top: 30%;
+}
+
+  
+
+.hero-text h2{
+    font-family: Sofia;
+    font-size: 29px;
+}
+
+.hero-text p {
+    font-family: Bellota;
+    color: rgb(0, 0, 0);
+    line-height: 1.7;
+}
+
+#hero-text-1{
+    display: none;
+}
+
+#hero-text-1 {
+    font-family: Bellota;
+    font-size: 17px;
+}
+
+.one{
+    background: url("../images/images1/computer-3174729_1920.jpg");
+    height: max-content;
+    overflow-y: scroll;
+}
+
+.two{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../images/images1/apple-1302430_1920.jpg");
+    z-index: -1;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.three{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: url("../images/images1/web-1012467_1920.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: row ;
+    justify-content: space-between;
+    height: 100%;
+}
+
+@media screen and (min-width:100px) and (max-width:750px) {
+    .hero{
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-text{
+        text-align: center;
+    }
+
+}
+
+.skill{
+    display: flex;
+    flex-flow: column;
+    align-items: space-around;
+    justify-content: space-around;
+    padding: 10px ;
+    background: whitesmoke;
+    margin: 10px;
+    font-family: Bellota;
+    border-radius: 5px;
+    width: 35%;
+    transition: .3s ease-in-out;
+}
+
+.skill:hover{
+    box-shadow: 3px 3px 7px rgba(17, 16, 16, 0.349), -3px -3px 7px rgba(17, 16, 16, 0.349);
+}
+
+.skill-text h3{
+    font-family: Poppins;
+    font-weight: bolder;
+}
+
+.skills-container{
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.progress-cont{
+    margin: 10px auto;
+    width: 100%;
+    height: 20px;
+    background: white  ;
+}
+
+.progress-complete{
+    background: cornflowerblue;
+    width: 20% ;
+    height: 100%;
+    transition: .3s ease-in
+
+}
+
+.progress-complete:hover{
+    background: rgba(218, 172, 24, 0.945);
+}
+
+.skill-text{
+    padding: 10px;
+}
+
+.skill-text h3{
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.skill-text p{
+    margin-top: 20px;
+}
+
+.hero-image-3{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero-image-3 .skill-page-links{
+    margin: 10px auto;
+}
+
+.hero-image-3 .skill-page-links a{
+ 
+    display: inline-block;
+    padding: 20px 25px;
+    background: rgba(218, 172, 24, 0.945);
+    text-decoration: none;
+    color: black;
+    font-family: Bellota;
+    margin: 10px;
+    transition: .3s ease-in;
+
+}
+
+.hero-image-3 .skill-page-links a:hover{
+    background: cornflowerblue;
+    box-shadow: 5px 5px black;
+    color: white;
+}
+
+.hero-image-3-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.hero-image-3-img img{
+    width: 150%;
+}
